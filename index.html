@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duan Yuqing - Portfolio & Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Top Retro Header Navigation -->
+    <header class="top-nav">
+        <div class="nav-btn action-pill">DUAN YUQING</div>
+        
+        <!-- Central Segmented Toggle -->
+        <div class="segmented-control">
+            <button class="nav-tab" data-target="activities-view">ACTIVITIES</button>
+            <div class="center-badge"><i class="fa-solid fa-lightbulb"></i></div>
+            <button class="nav-tab" data-target="projects-view">PROJECTS</button>
+            <button class="nav-tab active" data-target="experience-view">EXPERIENCE</button>
+            <button class="nav-tab" data-target="about-view">ABOUT</button>
+        </div>
+
+        <a href="mailto:duanyuqing2025@163.com" class="nav-btn action-pill dark">CONTACT ME</a>
+    </header>
+
+    <main class="page-container">
+
+        <!-- ==================== PAGE 1: ACTIVITIES VIEW ==================== -->
+        <section id="activities-view" class="page-view">
+            <div class="hero-comic-box">
+                <div class="hero-title-badge">ACTIVITIES & EVENTS</div>
+                <div class="card-fan-container">
+                    <div class="fan-card tilt-left">
+                        <div class="badge-num">1</div>
+                        <div class="fan-img-frame ratio-4-3">
+                            <i class="fa-solid fa-robot"></i>
+                            <span>Mars Rover Demo</span>
+                        </div>
+                        <div class="fan-label">3D PRINTING</div>
+                    </div>
+
+                    <div class="fan-card tilt-center">
+                        <div class="badge-num">2</div>
+                        <div class="fan-img-frame ratio-4-3">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>Edu Expo</span>
+                        </div>
+                        <div class="fan-label">JAVA LECTURER</div>
+                    </div>
+
+                    <div class="fan-card tilt-right">
+                        <div class="badge-num">3</div>
+                        <div class="fan-img-frame ratio-4-3">
+                            <i class="fa-solid fa-users"></i>
+                            <span>Robotics Workshop</span>
+                        </div>
+                        <div class="fan-label">CLUB EVENTS</div>
+                    </div>
+                </div>
+
+                <div class="hero-speech-bubble">
+                    <h3>Campus Events & Workshop Highlights</h3>
+                    <p>Interactive demonstrations, club leadership, and international student exchange activities.</p>
+                </div>
+            </div>
+
+            <div class="ticker-bar">
+                <span>EXHIBITIONS</span> ✦ <span>WORKSHOPS</span> ✦ <span>CLUB LEADERSHIP</span> ✦ <span>ROBOTICS DEMO</span>
+            </div>
+
+            <div class="activities-grid">
+                <article class="comic-card">
+                    <div class="card-header-bar">
+                        <span class="pill-tag yellow">EXPO DEMO</span>
+                        <span class="date-str">MAY 2025 – AUG 2025</span>
+                    </div>
+                    <h3>3D-Printing "Mars-Rover" Project</h3>
+                    <p class="desc">Built a remote-controlled vehicle prototype using SolidWorks & 3D-printing. Demonstrated project for freshmen orientation and international exchange.</p>
+                    
+                    <div class="horizontal-gallery-43">
+                        <div class="img-box-43"><i class="fa-solid fa-image"></i><span>Rover Prototype</span></div>
+                        <div class="img-box-43"><i class="fa-solid fa-image"></i><span>3D Print Lab</span></div>
+                        <div class="img-box-43"><i class="fa-solid fa-image"></i><span>Orientation Expo</span></div>
+                    </div>
+                </article>
+
+                <article class="comic-card">
+                    <div class="card-header-bar">
+                        <span class="pill-tag blue">OFFLINE PROMOTION</span>
+                        <span class="date-str">MAR 2025 – MAY 2025</span>
+                    </div>
+                    <h3>Java Lecturer & Teaching Exhibition</h3>
+                    <p class="desc">Operated Xiaohongshu & WeChat accounts to deliver Java courses. Built website UI with VueEJS and presented at international education exhibitions.</p>
+                    
+                    <div class="horizontal-gallery-43">
+                        <div class="img-box-43"><i class="fa-solid fa-image"></i><span>Education Booth</span></div>
+                        <div class="img-box-43"><i class="fa-solid fa-image"></i><span>Course Materials</span></div>
+                        <div class="img-box-43"><i class="fa-solid fa-image"></i><span>Student Interaction</span></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ==================== PAGE 2: PROJECTS VIEW ==================== -->
+        <section id="projects-view" class="page-view">
+            <div class="section-title-box">
+                <h2>INTERACTIVE PROJECT SHOWCASE</h2>
+                <p>Click any thumbnail in the gallery below to swap it into the main large frame.</p>
+            </div>
+
+            <div class="project-split-layout">
+                <div class="project-media-side">
+                    <div class="main-big-frame">
+                        <div class="big-img-placeholder" id="mainImageContainer">
+                            <i class="fa-solid fa-vr-cardboard"></i>
+                            <span id="mainImageTitle">WebXR Industrial Robotic Arm Control</span>
+                        </div>
+                    </div>
+
+                    <div class="thumbnails-row">
+                        <div class="thumb-box active" onclick="switchProjectImage('WebXR Industrial Robotic Arm Control', 'fa-vr-cardboard')">
+                            <i class="fa-solid fa-vr-cardboard"></i>
+                            <span>WebXR System</span>
+                        </div>
+                        <div class="thumb-box" onclick="switchProjectImage('ROS2 Spatial Image Processing', 'fa-network-wired')">
+                            <i class="fa-solid fa-network-wired"></i>
+                            <span>ROS2 Processing</span>
+                        </div>
+                        <div class="thumb-box" onclick="switchProjectImage('3D Machine Vision Debugging', 'fa-eye')">
+                            <i class="fa-solid fa-eye"></i>
+                            <span>3D Vision</span>
+                        </div>
+                        <div class="thumb-box" onclick="switchProjectImage('AI Agent Dialogue Bot Interface', 'fa-robot')">
+                            <i class="fa-solid fa-robot"></i>
+                            <span>AI Agent Bot</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-info-side">
+                    <div class="info-card comic-card">
+                        <span class="pill-tag blue">CURRENT INTERNSHIP</span>
+                        <h2 id="projectTitle">WebXR Robot Motion Control</h2>
+                        <div class="tech-stack-row">
+                            <span class="neo-badge">WebXR</span>
+                            <span class="neo-badge">ROS2</span>
+                            <span class="neo-badge">Python</span>
+                            <span class="neo-badge">3D Vision</span>
+                        </div>
+                        <p id="projectDescription" class="project-text-desc">
+                            Developed VR human-robot interaction system based on WebXR to achieve full-dimensional motion control for industrial robotic arms. Applied ROS2 and 3D machine-vision techniques to process spatial image data in parallel teams.
+                        </p>
+                        <div class="key-points-box">
+                            <div><i class="fa-solid fa-check"></i> 6-DOF Motion Control in Browser</div>
+                            <div><i class="fa-solid fa-check"></i> Real-time Spatial Point Cloud Processing</div>
+                            <div><i class="fa-solid fa-check"></i> Hardware-Software Joint Debugging</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PAGE 3: EXPERIENCE VIEW ==================== -->
+        <section id="experience-view" class="page-view active">
+            <div class="section-title-box">
+                <h2>EXPERIENCE & TIMELINE MAP</h2>
+                <p>Interactive timeline tracking university, projects, internships, club, activities & work experience.</p>
+            </div>
+
+            <!-- Top Filter & Search Controls -->
+            <div class="filter-controls-card comic-card">
+                <div class="search-group">
+                    <label><i class="fa-solid fa-magnifying-glass"></i> Search Skills / Title:</label>
+                    <input type="text" id="skillSearch" placeholder="e.g. WebXR, Python, Vue, ROS2...">
+                </div>
+
+                <button id="openAddModalBtn" class="action-pill yellow-btn"><i class="fa-solid fa-plus"></i> ADD EXPERIENCE</button>
+            </div>
+
+            <!-- Visualized Timeline & Calendar Grid -->
+            <div class="timeline-calendar-wrapper comic-card">
+                <div class="calendar-header-row">
+                    <div class="label-col filter-col">
+                        <select id="typeFilter">
+                            <option value="all">Filter by Type (All)</option>
+                            <option value="university">University Degree</option>
+                            <option value="intern">Internship</option>
+                            <option value="project">Project</option>
+                            <option value="club">Club</option>
+                            <option value="activity">Activity / Events</option>
+                            <option value="working">Working Experience</option>
+                        </select>
+                    </div>
+                    <div class="year-block"><span>2025</span></div>
+                    <div class="year-block"><span>2026</span></div>
+                    <div class="year-block"><span>2027</span></div>
+                    <div class="year-block"><span>2028</span></div>
+                </div>
+
+                <div class="months-sub-row">
+                    <div class="label-col">Timeline Bar</div>
+                    <div class="months-flex">
+                        <!-- Months rendered via JS dynamically -->
+                    </div>
+                </div>
+
+                <!-- Timeline Tracks Container -->
+                <div id="timelineTracks" class="timeline-tracks">
+                    <!-- Dynamic Timeline Tracks Rendered via Javascript -->
+                </div>
+            </div>
+
+            <!-- Large Experience Card List Grid -->
+            <div id="experienceGrid" class="large-experience-grid">
+                <!-- Dynamic Experience Cards Rendered via Javascript -->
+            </div>
+        </section>
+
+        <!-- ==================== PAGE 4: ABOUT VIEW ==================== -->
+        <section id="about-view" class="page-view">
+            <div class="comic-card about-layout">
+                <div class="about-avatar-side">
+                    <div class="big-avatar-frame">
+                        <i class="fa-solid fa-user-astronaut"></i>
+                    </div>
+                    <h2>Duan Yuqing</h2>
+                    <p class="sub">APU AI Undergraduate</p>
+                </div>
+                <div class="about-text-side">
+                    <span class="pill-tag blue">SELF-EVALUATION</span>
+                    <p class="about-bio">
+                        Artificial-Intelligence undergraduate with practical experience in WebXR robot-AI development, EI-indexed conference paper research, and online-community operations. Proficient in using AI tools for data cleaning, user-feedback analysis, model-effect evaluation, and cross-department alignment.
+                    </p>
+                    <div class="contact-grid">
+                        <div><strong>Email:</strong> duanyuqing2025@163.com</div>
+                        <div><strong>Location:</strong> Bukit Jalil, KL</div>
+                        <div><strong>English:</strong> TOEFL 86</div>
+                        <div><strong>Phone:</strong> (+86) 15773652978</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Detail Modal Popup for Experience Card Details -->
+    <div id="detailModal" class="modal-backdrop">
+        <div class="modal-comic-card">
+            <button class="modal-close-btn" id="closeModal">&times;</button>
+            <div class="modal-header">
+                <span id="modalTypeBadge" class="pill-tag yellow">TYPE</span>
+                <span id="modalDateStr" class="date-str">DATE</span>
+            </div>
+            
+            <div class="modal-hero-img-box" id="modalImgContainer">
+                <!-- Image or icon rendered dynamically -->
+            </div>
+
+            <h2 id="modalTitle">Title</h2>
+            <h4 id="modalSubtitle" class="modal-sub">Subtitle / Role</h4>
+            
+            <div class="modal-skills-box">
+                <strong>Skills / Technologies:</strong>
+                <div id="modalSkills" class="tech-stack-row margin-top-5"></div>
+            </div>
+
+            <div class="modal-desc-box">
+                <strong>Description:</strong>
+                <p id="modalDescription" class="modal-desc margin-top-5">Detailed Description...</p>
+            </div>
+            
+            <div id="modalHighlights" class="key-points-box margin-top-10"></div>
+        </div>
+    </div>
+
+    <!-- Modal Form for Adding New Experience -->
+    <div id="addExperienceModal" class="modal-backdrop">
+        <div class="modal-comic-card add-modal-card">
+            <button class="modal-close-btn" id="closeAddModal">&times;</button>
+            <h2><i class="fa-solid fa-plus-circle"></i> Add New Experience</h2>
+            
+            <form id="addExperienceForm" class="add-exp-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Title *</label>
+                        <input type="text" id="expTitle" required placeholder="e.g. APU AI Lab Project">
+                    </div>
+                    <div class="form-group">
+                        <label>Subtitle / Role *</label>
+                        <input type="text" id="expSubtitle" required placeholder="e.g. Lead Developer">
+                    </div>
+                    <div class="form-group">
+                        <label>Experience Type *</label>
+                        <select id="expType" required>
+                            <option value="university">University Degree</option>
+                            <option value="intern">Internship</option>
+                            <option value="project">Project</option>
+                            <option value="club">Club</option>
+                            <option value="activity">Activity / Events</option>
+                            <option value="working">Working Experience</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Image (URL or Icon Class)</label>
+                        <input type="text" id="expImage" placeholder="https://... or fa-robot">
+                    </div>
+                    <div class="form-group">
+                        <label>Start Month *</label>
+                        <input type="month" id="expStartMonth" min="2025-01" max="2028-12" required>
+                    </div>
+                    <div class="form-group">
+                        <label>End Month *</label>
+                        <input type="month" id="expEndMonth" min="2025-01" max="2028-12" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Skills (Comma-separated)</label>
+                    <input type="text" id="expSkills" placeholder="e.g. Python, WebXR, OpenCV">
+                </div>
+
+                <div class="form-group">
+                    <label>Detailed Description *</label>
+                    <textarea id="expDescription" rows="3" required placeholder="Write a clear description of your achievements and roles..."></textarea>
+                </div>
+
+                <button type="submit" class="action-pill submit-btn">CREATE EXPERIENCE</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
